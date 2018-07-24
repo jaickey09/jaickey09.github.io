@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Resume</title>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+    <h1>Submit Your Resume</h1> 
+    <fieldset>
+    <form action="https://www.w3schools.com/tags/att_button_form.asp" method="get" id="form1">
+        <fieldset>
+        <table width="100%" border="0">
+            <legend>&nbsp;Personal Details</legend>
+             
+             <tr><th align="left" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*First Name:&nbsp;&nbsp;</th>
+                 <th align="left" ><input type="text" id="name1" required size="70" autofocus placeholder="Enter Your First Name">
+                 </th>
+             </tr>
+             <tr><th align="left" width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     Middle Name:&nbsp;&nbsp;</th>
+                 <th align="left" width="70%"><input type="text" id="name2"  size="70" placeholder=
+                                                     "Enter Your Middle Name">
+                 </th></tr>
+             <tr><th align="left" width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     *Last Name:&nbsp;&nbsp;</th>
+                 <th align="left" width="70%"><input type="text" id="name3" required size="70" 
+                                                     placeholder="Enter Your Last Name">
+                 </th>
+             </tr>
+             <tr>
+                 <th align="left" width="30%">
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date of Birth:
+                 </th>
+                 <th align="left" width="70%">
+                     <input type="date" id="dob1">
+                 </th>
+             </tr>
+             <tr>
+                 <th align="left" width="30%">
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Age in years
+                 </th>
+                 <th align="left" width="70%">
+                     <input type="text" id="n1" size="6" maxlength="3" required placeholder=">18">
+                 </th>
+             </tr>
+             <tr>
+                 <th align="left" width="30%">
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gender
+                 </th>
+                 <th align="left" width="70%">
+                     <input type="radio" id="r1" name="g" >Male
+                     <input type="radio" id="r2" name="g">Female
+                 </th>
+             </tr>
+        </table>
+        </fieldset>
+        <table width="100%">
+             <tr><th align="left" width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Progress</th>
+                 <th align="left" width="70%">&nbsp;<progress value="2" max="100"></progress></th></tr>
+        </table>
+        
+        <fieldset>
+            <legend>Address</legend>
+            <table border="0" width="100%">
+                <tr>
+                    <th width="30%" align="left">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address
+                    </th>
+                    
+                    <th width="70%" align="left" >
+                        <textarea name="add" rows="2" cols="70"></textarea>
+                    </th>
+                </tr>
+                <tr>
+                    <th width="30%" align="left">
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City/Town 
+                    </th>
+                    <th width="70%" align="left">
+                        <input type="text" id="city" size="30">
+                    </th>
+                </tr>
+                <tr>
+                    <th width="30%" align="left">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;State  
+                    </th>
+                    <th width="70%" align="left">
+                        <select name = "dropdown">
+                        <option value = "cg">Chhattisgarh</option>    
+                        <option value = "tn" >Tamil Nadu</option>
+                        <option value = "kl">Kerala</option>
+                        <option value = "ap">Andhra Pradesh</option>
+                        <option value = "ts">Telagana</option>
+                        <option value = "ga">Goa</option>
+                        <option value = "wb">West Bengal</option>
+                        <option value = "mp" >Madhya Pradesh</option>
+                         </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th width="30%" align="left">
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pin Code 
+                    </th>
+                    <th width="70%" align="left">
+                        <input type="text" id="pc" size="12" maxlength="6" placeholder="maximum of 6">
+                    </th>
+                </tr>
+            </table>
+            
+        </fieldset>
+        <table width="100%">
+             <tr><th align="left" width="30%">
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Progress</th>
+                 <th align="left" width="70%">&nbsp;<progress value="8" max="100"></progress></th></tr>
+        </table>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <table width="100%" border="0">
+                <tr>
+                    <th width="30%" align="left">
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mobile 
+                    </th>
+                    <th width="70%" align="left">
+                        (+91)<input type="text" maxlength="10" required size="10" placeholder="1234567890"> 
+                    </th>
+                </tr>
+                <tr>
+                    <th width="30%" align="left">
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email 
+                    </th>
+                    <th width="70%" align="left">
+                        <input type="email" maxlength="50" id="e" required size="30" placeholder="abc@mail.com"> 
+                    </th>
+                </tr>
+                <tr>
+                    <th width="30%" align="left">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Website
+                    </th>
+                    <th  width="70%" align="left">
+                        <input type="text" size="30" maxlength="30" placeholder="www.sample.com">
+                    </th>
+                </tr>
+            </table>
+            
+        </fieldset>
+        <table width="100%">
+             <tr><th align="left" width="30%">
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Progress</th>
+                 <th align="left" width="70%">&nbsp;<progress value="8" max="100"></progress></th></tr>
+        </table>
+        <fieldset>
+            <legend>Education Details</legend>
+            <table width="100%" border="1">
+                <tr>
+                    <th>Tick</th>
+                    <th>Qualification</th>
+                    <th>Board/University</th>
+                    <th>Country</th>
+                    <th>Starting Year</th>
+                    <th>Ending Year</th>
+                    <th>Percentage</th>
+                </tr>
+                <tr>
+                    <td align="center"><input type="checkbox"></td>
+                    <td align="center">10th</td>
+                    <td align="center"><input type="text" maxlength="20" size="15" placeholder="Board/University"></td>
+                    <td align="center"><select name = "dropdown">
+                        <option value = "ch">Choose</option>    
+                        <option value = "in" >India</option>
+                        <option value = "ko">Korea</option>
+                        <option value = "a">America</option>
+                        <option value = "pk">Pakistan</option>
+                        <option value = "c">China</option>
+                         </select></td>
+                         <td align="center"><input type="date"></td>
+                         <td align="center"><input type="date"></td>
+                         <td align="center"><input type="number" minlength="1" maxlength="3" max="100" min="0" value="0"></td>
+                </tr>
+                <tr>
+                    <td align="center"><input type="checkbox"></td>
+                    <td align="center">12th</td>
+                    <td align="center"><input type="text" maxlength="20" size="15" placeholder="Board/University"></td>
+                    <td align="center"><select name = "dropdown">
+                        <option value = "ch">Choose</option>    
+                        <option value = "in" >India</option>
+                        <option value = "ko">Korea</option>
+                        <option value = "a">America</option>
+                        <option value = "pk">Pakistan</option>
+                        <option value = "c">China</option>
+                         </select></td>
+                         <td align="center"><input type="date"></td>
+                         <td align="center"><input type="date"></td>
+                         <td align="center"><input type="number" minlength="1" maxlength="3" max="100" min="0" value="0"></td>
+                </tr>
+                <tr>
+                    <td align="center"><input type="checkbox"></td>
+                    <td align="center">B.Tech</td>
+                    <td align="center"><input type="text" maxlength="20" size="15" placeholder="Board/University"></td>
+                    <td align="center"><select name = "dropdown">
+                        <option value = "ch">Choose</option>    
+                        <option value = "in" >India</option>
+                        <option value = "ko">Korea</option>
+                        <option value = "a">America</option>
+                        <option value = "pk">Pakistan</option>
+                        <option value = "c">China</option>
+                         </select></td>
+                         <td align="center"><input type="date"></td>
+                         <td align="center"><input type="date"></td>
+                         <td align="center"><input type="number" minlength="1" maxlength="3" max="100" min="0" value="1"></td>
+                </tr>
+                <tr>
+                    <td align="center"><input type="checkbox"></td>
+                    <td align="center">M.tech</td>
+                    <td align="center"><input type="text" maxlength="20" size="15" placeholder="Board/University"></td>
+                    <td align="center"><select name = "dropdown">
+                        <option value = "ch">Choose</option>    
+                        <option value = "in" >India</option>
+                        <option value = "ko">Korea</option>
+                        <option value = "a">America</option>
+                        <option value = "pk">Pakistan</option>
+                        <option value = "c">China</option>
+                         </select></td>
+                         <td align="center"><input type="date"></td>
+                         <td align="center"><input type="date"></td>
+                         <td align="center"><input type="number" minlength="1" maxlength="3" max="100" min="0" value="0"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <table width="100%" border="0">
+             <tr><th align="left" width="30%">
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Progress</th>
+                 <th align="left" width="70%">&nbsp;<progress value="15" max="100"></progress></th></tr>
+        </table>
+        <fieldset>
+        <table width="100%" border="0">
+            <tr>
+                <th width="35%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Attach your resume in the format of .doc or .pdf</th>
+                <th align="left"><input type="file" name="ftu"></th>
+            </tr>
+        </table>
+        </fieldset>
+        <table width="100%" border="0">
+             <tr><th align="left" width="30%">
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Progress</th>
+                 <th align="left" width="70%">&nbsp;<progress value="15" max="100"></progress></th></tr>
+        </table>
+        <table width="100%" border="0">
+            <tr>
+                <th align="right" width="50%">
+                    <button type="submit" form="form1" value="Submit">Submit Your Resume</button>
+                </th>
+                <th align="left">
+                    <button type="reset" value="reset" form="form1">
+                      Reset  
+                    </button>
+                </th>
+            </tr>
+        </table>
+    </form>
+    </fieldset>
+    </body>
+</html>
+
