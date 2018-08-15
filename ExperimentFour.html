@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Experiment Four</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                font-family: inherit;
+            }
+            body{
+                margin: 0;
+            }
+          ul{
+            background-color: none;
+            overflow: hidden;
+            color: black;
+            width: 100%;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+            font-size: 20px;
+        }
+
+        li a{
+            display: block;
+           /* background-color: bisque;*/
+            color: red;
+            text-align: center;
+            padding: 14px 16px;
+            border-left: 1px transparent;
+            border-right: 1px transparent;
+            border-bottom: 1px transparent;
+            border-top: 1px transparent;
+            text-decoration: none;
+            
+            margin: 0;
+        }
+        li{
+            float: left;
+            width: 20%;
+            
+        }
+        li a:hover{
+            background:transparent;
+            color: white;
+            border-bottom: 3px solid white;
+        }
+        .d1{
+             background-image: url('http://wpnature.com/wp-content/uploads/2016/08/forest-mystic-autumn-grass-path-trees-beautiful-fog-fence-leaves-miri-wallpaper-free-download-1920x1080.jpg');
+             width:100%;
+             height: 700px;
+             background-size: cover;
+             background-repeat: no-repeat;
+        }
+        .d2{
+            background-color:white;
+            opacity:0.5;
+            height: 300px;
+            width:50%;
+            margin-left:50%;
+            border-left: 3px dotted black;
+            
+            
+        }
+        .s1{
+            margin-top: 5px;
+            width:48%;
+            display: inline-block;
+            border-radius:50%;
+            background-color: white;
+            height:290px;
+            margin-bottom: 0;
+            margin-left: 5px;
+            margin-right: 5px;
+            background-image: url('http://icons-for-free.com/icon/download-css_html_html5_icon-498356.png');
+            background-size: 350px;
+            
+           
+        }
+        .s2{
+            background-image: url('https://www.multiplicalia.com/wp-content/uploads/2013/06/css3.jpg');
+            margin-top: 5px;
+            width:48%;
+            display: inline-block;
+            border-radius:50%;
+            background-color: white;
+            height:290px;
+            margin-bottom: 0px;
+            margin-left: 10px;
+            margin-right: 5px;
+        }
+        .d2:hover{
+            opacity:.8;
+            background: transparent;
+        }
+        .s1:hover,.s2:hover{
+            opacity:1;
+        }
+        .d3{
+            height:200px;
+            width:50%;
+            margin-left:0;
+            background:transparent;
+            border-right: 3px dotted black;
+            position: absolute;
+            opacity:0.5;
+            background-color: white;
+        }
+        .d3:hover,.d4:hover{
+            opacity:1;
+            background: transparent;
+        }
+       #h1{
+            color:red;
+            text-align: center;
+            font-size: 60px;
+            padding-top: 5px;
+            
+        }
+        #p1{
+            color:red;
+            font-size: 30px;
+            padding-top:5px;
+            padding-left:110px;
+        }
+        .d4{
+            width: 50%;
+            height:155px;
+            right: 0;
+            position: absolute;
+            top:548px;
+            left: 50%;
+            border-left:3px dotted black;
+            background-color: white;
+            opacity : 0.5;
+        }
+        #h2{
+            color:red;
+            text-align: center;
+            font-size: 55px;
+            padding-top: 10px;
+            
+        }
+        .d5{
+           height:60px;
+           width:100%;
+           background-color: black;
+           position: absolute;
+           opacity:1;
+        }
+        #h3{
+            color: red;
+            font-size: 35px;
+            text-align: left;
+            margin-top: 9px;
+            margin-left: 20px;
+        }
+        .d5:hover,#h3:hover{
+            color: white;
+            opacity:1;
+            background-color: black;
+        }
+        .d6{
+           background-color: blue;
+           width:100%;
+           height:310px;
+           background-image: url('https://media.istockphoto.com/photos/blue-gradient-blurred-abstract-background-picture-id523159398?k=6&m=523159398&s=612x612&w=0&h=hw98BNjx1c8-UWnAJr2LVxr6ubrGLvXSQcdv_Po-1xg=');
+           background-size:cover;
+           opacity:0.5;
+           margin-top:60px;
+        }
+        .d6:hover{
+            opacity:1;
+        }
+        .d7{
+            height:250px;
+            width:100%;
+            /*border:3px solid green;*/
+        }
+        .d8{
+            height:50px;
+            width:100%;
+            /*border:3px solid white;*/
+        }
+        .s3{
+            margin-top:3px;
+            width:30%;
+            height:240px;
+            border:2px solid red;
+            border-radius: 50%;
+            display:inline-block;
+            margin-left:50px;
+            background-image:url('https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX24222275.jpg');
+            opacity:0.5;
+        }
+        .s4{
+            margin-top:3px;
+            width:30%;
+            height:240px;
+            margin-left:20px;
+            border:2px solid red;
+            border-radius: 50%;
+            display:inline-block;
+            background-repeat: no-repeat;
+            background-size: 450px 400px;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm7TjBVo2dM6XBdqZYVv_7GhwDnmOOwJ6QMpllzIX6GOV7rTUG');
+            opacity:0.5;
+        }
+        .s5{
+            opacity:0.5;
+            margin-top:3px;
+            width:30%;
+            height:240px;
+            background-repeat:no-repeat;
+            background-size:450px 400px;
+            background-image:url('data:image/png;base64,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');
+            border:2px solid red;
+            border-radius: 50%;
+            display:inline-block;
+            margin-left:20px;}
+        .s6{
+            
+            width:33%;
+            display:inline-block;
+            
+        }
+        .s7{
+            
+            width:33%;
+            display:inline-block;
+        }
+        .s8{
+            
+            width:33%;
+            display:inline-block;
+        }
+        .s3:hover,.s4:hover,.s5:hover,.s6:hover,.s7:hover,.s8:hover{
+            opacity:1;
+        }
+        #h4{
+            
+            color:red;
+            text-align: center;
+            margin-top:5px;
+            font-size:40px;
+        }
+        td{
+            text-align: center;
+            
+        }
+        table{
+            position: relative;
+            margin-left:600px;
+            margin-top:20px;
+            color:red;
+            background-color:black;
+            font-size:35px;
+        }
+        .d10{
+            margin-top:60px;
+            background-color:lightblue;
+            height:220px;
+            width:100%;
+            position:absolute;
+            background-image: url('bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity:0.5;
+        }
+        .d10:hover{
+            opacity:1;
+        }
+        #r1{
+            color:darkorange;
+            opacity:0.5;
+        }
+        #r2,#r3,#r4{
+            opacity:0.5;
+        }
+        #r1:hover,#r2:hover,#r3:hover,#r4:hover{
+            opacity:1;
+            background-color: black;
+            color:white;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="d1">
+            <nav>
+            <ul>
+                <li><a href="http://www.annatech.me/ExperimentFour.html"><b>Home</b></a></li>
+                <li><a href="https://www.google.com/"><b>About Me</b></a></li>
+                <li><a href="https://www.google.com/"><b>My Profile</b></a></li>
+                <li><a href="https://www.google.com/"><b>Suggestion</b></a></li>
+                <li><a href="https://www.google.com/"><b>Contact Us</b></a></li>
+            </ul>
+        </nav>
+            <div class="d2">
+                <section class="s1">
+                    
+                </section>
+                <section class="s2">
+                    
+                </section>
+            </div>
+            <div class="d3">
+                <p id="p1">
+                    Profile Of:
+                </p>
+                <h1 id="h1" ><i>Jaickey Joy Minj</i></h1>
+            </div>
+            <div class="d4">
+                <h1 id="h2">Web Developer</h1>
+            </div>
+        </div>
+        <div class="d5">
+            <h3 id="h3"><i>My Family Members</i></h3>
+        </div>
+        <div class="d6">
+            <div class="d7">
+                <section class="s3"></section>
+                <section class="s4"></section> 
+                <section class="s5"></section> 
+            </div>
+            <div class="d8">
+                <section class="s6"><h2 id="h4"><i>Mr. Dad</i></h2>
+                    </section>
+                <section class="s7"><h2 id="h4"><i>Mrs. Mom</i></h2>
+                    </section> 
+                <section class="s8"><h2 id="h4"><i>Sister</i></h2>
+                    
+                </section> 
+            </div>
+        </div>
+        <div class="d5"><h3 id="h3"><i>My Favorites</i></h3></div>
+        <div class="d10" >
+         <table border="1" >
+            <tr id="r1">
+                <th colspan="2"><i>My Favourite Foods</i></th>
+            </tr>
+            <tr id="r2">
+                <td style="font-size:20px; ">Chicken</td>
+                <td><img src="chicken.jpg" width="60" height="35"></td>
+            </tr>
+            <tr id="r3">
+                <td style="font-size:20px; ">Chocolate</td>
+                <td><img src="choclate.jpg" width="60" height="35"></td>
+            </tr>
+            <tr id="r4">
+                <td style="font-size:20px; ">Ice Cream</td>
+                <td ><img src="icecream.jpg" width="60" height="35"></td>
+            </tr>
+        </table>   
+        </div>
+        
+    </body>
+</html>
