@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Pizza Order Form</h1>
+        <fieldset>
+         # of Small Pizzas(Rs 100) <input type="text" id="small" /><br />
+         # of Medium Pizzas(Rs 200) <input type="text" id="medium" /><br />
+         # of Large Pizzas (Rs 400)<input type="text" id="large" /><br />
+         Tip:
+         <label><input type="radio" value="10" name="t1" id="r1" /> 10</label>
+         <label><input type="radio" value="15" name="t1" id="r2" checked="checked" /> 15
+         </label>
+         <label><input type="radio" value="20" name="t1" id="r3" /> 20</label> <br />
+         <button id="submit" onclick="cal();" >Calculate Order</button>
+        </fieldset>
+        <p>
+         Cost of order: <span id="price"></span>
+        <p>
+            <script>
+                function cal(){
+                var s=0;
+                  s=document.getElementById('small').value;
+                var m=0;
+                m=document.getElementById('medium').value;
+                var l=0;
+                l=document.getElementById('large').value;
+                if(document.getElementById('r1').checked)
+                {
+                    var r=((s*100)+(m*200)+(l*400));
+                            var s=r*(9/100);
+                            r=r+s;
+                    var t=r*(10/100);
+                    document.getElementById('price').innerHTML=((r+t));
+                }
+                if(document.getElementById('r2').checked)
+                {
+                    var r=((s*100)+(m*200)+(l*400));
+                    var s=r*(9/100);
+                            r=r+s;
+                    var t=r*(15/100);
+                    document.getElementById('price').innerHTML=(r+t);
+                }
+                if(document.getElementById('r3').checked)
+                {
+                    var r=((s*100)+(m*200)+(l*400));
+                    var s=r*(9/100);
+                            r=r+s;
+                    var t=r*(20/100);
+                    document.getElementById('price').innerHTML=(r+t);
+                }
+            }
+                </script>
+    </body>
+</html>
