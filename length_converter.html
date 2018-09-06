@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Convert</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       <fieldset>
+         Convert <input type="text"  id="data"  />
+            <select id="from">
+        <option >meters</option>
+        <option >kilometers</option>
+        </select>
+            to
+            <select id ="to">
+        <option >m</option>
+        <option >km</option>
+        </select>
+        <button onclick="convert();">Calculate</button>
+        <b><span id="answer"></span></b>
+        </fieldset>
+        <script> 
+            function convert(){
+                var x= parseInt(document.getElementById('data').value);
+                var y= parseInt(document.getElementById('from').selectedIndex);
+                var z=parseInt(document.getElementById('to').selectedIndex);
+                if(y===0&&z===0)
+                {
+                    document.getElementById('answer').innerHTML=x;
+                }
+                if(y===1&&z===1)
+                {
+                    document.getElementById('answer').innerHTML=x;
+                }
+                if(y===1&&z===0)
+                {
+                    document.getElementById('answer').innerHTML=(x*1000)+ "meters";
+                }
+                if(y===0&&z===1)
+                {
+                    document.getElementById('answer').innerHTML=(x/1000) +"km";
+                }
+            }
+        </script>
+    </body>
+</html>
