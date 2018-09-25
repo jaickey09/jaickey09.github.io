@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Digital Clock!</h1>
+        
+        <span id="time" style="color:red; font-size: 30px;"></span>.
+        <script>
+        //define function display
+        //call the time display function for every one second
+        function display(){
+            // get time
+                var d= new Date();
+                // extract  hour,minutes and seconds
+               var h= d.getHours();
+                var m=d.getMinutes(); 
+                var s=d.getSeconds();
+                var c=0;
+                
+                 m = checkTime(m);
+                s = checkTime(s);
+                if(h-12>0){
+                    c='pm';
+                    
+                }
+                else{
+                    c='am';
+                }
+                h=h%12;
+                document.getElementById('time').innerHTML=" "+h+":"+m+":"+s+" "+c;}
+            
+                // call the time display function for every one second
+                setInterval("display()", 1000);
+                function checkTime(i) {
+                 if (i < 10) {i = "0" + i;};  // add zero in front of numbers < 10
+                     return i;
+                }
+        
+        </script>
+
+    </body>
+</html>

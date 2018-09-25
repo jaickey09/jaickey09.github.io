@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Background Color</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <h1>Dynamic Background!</h1>
+    
+    <script>
+    //define function setBackgroundColor
+    //call the setBackgroundColor function for every two seconds
+    function set()
+    {
+        //create random colors using rgb function
+            var red = Math.floor(Math.random()*255);
+            var blue = Math.floor(Math.random()*255);
+            var green = Math.floor(Math.random()*255);
+            var color= "rgb("+red+","+green+","+blue+")";
+            document.getElementsByTagName("body")[0].style="background-color:"+color;
+            
+    }
+    setInterval("set()", 2000);
+    </script>
+    </body>
+
+    
+
+</html>

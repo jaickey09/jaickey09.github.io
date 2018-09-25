@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Student Details</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p id="p1"></p>
+        <script>
+            // Create an array of objects
+        var Objectname = [
+                {     name: "Jack",
+                      regno:"UR16CS99",
+                      dob:1999
+                },
+                {	name: "John",
+                      regno:"UR16CS66",
+                      dob:2002
+                },
+                {	name: "Rich",
+                      regno:"UR16CS33",
+                      dob:2009
+                },
+                {	name: "Ryan",
+                      regno:"UR16CS44",
+                      dob:1989
+                }
+            ];
+              //Iterate through an array
+              for (var i = 0; i < Objectname.length; i++) {
+              //access property
+              document.getElementById('p1').innerHTML+= Objectname[i].name+" Register No. is "+Objectname[i].regno+"<br>";
+             
+              }
+              document.getElementById('p1').innerHTML+="<br>Lets sort the data in year wise<br><br>";
+              for(var i=0;i<Objectname.length;i++)
+              {
+               if(Objectname[i].dob<2000){
+                   document.getElementById('p1').innerHTML+=Objectname[i].name+" Born Before 2000 i.e."+Objectname[i].dob+"<br>";
+               }
+               else{
+                   document.getElementById('p1').innerHTML+=Objectname[i].name+" Born After 2000 i.e. "+Objectname[i].dob+"<br>";
+               }
+                 
+              
+          }
+
+            </script>
+    </body>
+</html>
