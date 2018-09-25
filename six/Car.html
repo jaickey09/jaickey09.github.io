@@ -1,0 +1,41 @@
+<html>
+   
+   <head>
+      <title>JavaScript Animation</title>
+      
+      <script type="text/javascript">
+         <!--
+            var imgObj = null;
+            var id;
+            function init(){
+               imgObj = document.getElementById('myImage');
+               imgObj.style.position= 'relative'; 
+               imgObj.style.left = '0px'; 
+                
+            }
+            
+            function moveRight(){
+            id = setInterval(moveRight,2000);
+               imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+            }
+            function moveLeft(){
+                    clearInterval(id);
+               imgObj.style.left ='0px';
+            }
+            window.onload =init;
+         //-->
+      </script>
+      
+   </head>
+   
+   <body>
+   
+      <form>
+         <img id="myImage" src="https://image.shutterstock.com/image-vector/cartoon-car-isolated-on-white-260nw-93519469.jpg" />
+         <br>
+         <input type="button" value="Start" onclick="moveRight();" />
+         <input type="button" value="Stop" onclick="moveLeft();" />
+      </form>
+      
+   </body>
+</html>
