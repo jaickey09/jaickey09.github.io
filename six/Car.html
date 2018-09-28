@@ -15,11 +15,11 @@
             }
             
             function moveRight(){
-            id = setInterval(moveRight,2000);
+            id = setTimeout(moveRight,1000);
                imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
             }
             function moveLeft(){
-                    clearInterval(id);
+                    clearTimeout(id);
                imgObj.style.left ='0px';
             }
             window.onload =init;
