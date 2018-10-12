@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/please.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE university SYSTEM "please.dtd">
+
+    <university>
+    ...
+    </university>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT university (employee)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT employee (firstname|lastname|employeeid|gender|phoneno|email|address|designation|department|salary)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT firstname (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT lastname (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT employeeid (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT gender (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT phoneno (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT email (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT address (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT designation (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT department (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT salary (#PCDATA)>

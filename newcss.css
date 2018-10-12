@@ -1,0 +1,42 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 12, 2018, 3:01:33 PM
+    Author     : ur16cs257
+*/
+
+university{
+    background-color:bisque;
+}
+employee{
+    color:blue;
+    display:block;
+    margin: 10px;
+    background-color: darkgray;
+    border: 5px solid background;
+    font-family: sans-serif;
+    font-weight: bolder;
+    
+}
+firstname, lastname {
+    color:red;
+    font-weight: bold;
+    display: inline-block;
+   padding: 10px;
+   box-sizing: border-box;
+}
+salary,employeeid, gender, address, designation , department{
+    color: green;
+    display: inline-block;
+    padding: 10px;
+   box-sizing: border-box;
+}
+phoneno, email {
+    color: coral;
+    display: inline-block;
+    padding: 10px;
+    background-color:white;
+}
