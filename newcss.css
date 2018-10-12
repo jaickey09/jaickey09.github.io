@@ -1,0 +1,78 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 12, 2018, 2:48:02 PM
+    Author     : ul16cs004
+*/
+university{
+    background-color: blanchedalmond;
+    display:table;
+    margin:8px;
+    width:99%;
+  }
+  employee {
+     display: table-row;
+      padding:10px;
+      text-align: center;
+      border: 2px solid silver;
+      background-color: whitesmoke;
+     font-family: cursive;
+     font-weight: bolder;
+  }
+  firstname{
+      display: table-cell;
+      border:1px solid black;
+      width:10%;
+      color:red;
+  }
+  lastname{
+     display: table-cell;
+      border:1px solid black;
+      width:10%;
+  }
+  employeeid{
+      display: table-cell;
+      border:1px solid black;
+      width:10%;
+  }
+  gender{
+      display: table-cell;
+      border:1px solid black;
+      width:10%;
+  }
+  email{
+      display: table-cell;
+      border:1px solid black;
+      width:10%;
+  }
+  phoneno{
+      display: table-cell;
+      border:1px solid black;
+      width:10%;
+      color:midnightblue;  }
+  address{
+      display: table-cell;
+      border:1px solid black;
+      width:10%;
+     
+  }
+  designation{
+      display: table-cell;
+      border:1px solid black;
+      width:10%;
+  }
+  salary{
+      display: table-cell;
+      border:1px solid black;
+      width:10%;
+      color: green;
+  }
+  department{
+      display: table-cell;
+      border:1px solid black;
+      width:10%;
+  }
+
